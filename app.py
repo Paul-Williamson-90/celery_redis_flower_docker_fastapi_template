@@ -9,7 +9,7 @@ async def read_root():
 
 @app.get("/add")
 async def add(x: int, y: int):
-    result = tasks.add.delay(x, y)
+    result = tasks.task_add.delay(x, y)
     return {
         "task_id": result.id,
         "result": "processing"

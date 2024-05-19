@@ -2,3 +2,4 @@ celery[redis]
 flower
 uvicorn
 fastapi
+requests
